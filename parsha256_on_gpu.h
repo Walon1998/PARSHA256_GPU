@@ -14,10 +14,11 @@
 #include "parsha256_kernel_middleRounds.cuh"
 #include "parsha256_kernel_decreasingRounds.cuh"
 #include "parsha256_kernel_lastRound.cuh"
+#include "parsha256_kernel_singleInvocation.cuh"
 #include <sstream>
 
 
-std::string parsha256_on_gpu(const std::string in) {
+std::string parsha256_on_gpu(const std::string in, const bool benchmark = false) {
 
 
     uint64_t added_zeros_bits = 0; // How many 0 bits to addd
@@ -27,7 +28,7 @@ std::string parsha256_on_gpu(const std::string in) {
 
 
     int L = in.size() * sizeof(char) * 8;
-    int T = 5; // Height of available processor tree
+    int T = 10; // Height of available processor tree
     int t; // Effective height processor tree
     const int l = 0; // IV length
 
@@ -36,16 +37,25 @@ std::string parsha256_on_gpu(const std::string in) {
     uint64_t b;
 
 
+
     if (L <= delta(0)) {
 
 
         std::vector<int> padded = parsha256_padding(in, n - l - L); // IV padding0
 
 
+        int *dev_ptr;
+        cudaMalloc(&dev_ptr, 24 * sizeof(uint32_t));
+        cudaMemcpy(dev_ptr, padded.data(), 24 * sizeof(uint32_t), cudaMemcpyHostToDevice);
+
+        parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+
+        cudaMemcpy(padded.data(), dev_ptr, 8 * sizeof(int), cudaMemcpyDeviceToHost);
 
 
 
-        parsha256_sha256(padded.data(), padded.data() + 8, padded.data() + 16, padded.data());
+
+//        parsha256_sha256(padded.data(), padded.data() + 8, padded.data() + 16, padded.data());
 
 
 
@@ -57,12 +67,18 @@ std::string parsha256_on_gpu(const std::string in) {
         }
         padded[m / 32 - 1] = _byteswap_ulong(L);
 
+        cudaMemcpy(dev_ptr, padded.data(), 24 * sizeof(uint32_t), cudaMemcpyHostToDevice);
+
+
 //        for (int &i : padded) {
 //            i = _byteswap_uint32(i);
 //        }
 
+        parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
 
-        parsha256_sha256(padded.data(), padded.data() + 8, padded.data() + 16, padded.data()); // Write intermediate result to input buffer
+        cudaMemcpy(padded.data(), dev_ptr, 8 * sizeof(int), cudaMemcpyDeviceToHost);
+
+//        parsha256_sha256(padded.data(), padded.data() + 8, padded.data() + 16, padded.data()); // Write intermediate result to input buffer
 
         std::string res_string = "";
         char buffer[50];
@@ -165,7 +181,6 @@ std::string parsha256_on_gpu(const std::string in) {
 
 // First Round
     parsha256_kernel_gpu_firstRound<<<threads_per_threadsblock, thread_blocks>>>(dev_In, dev_buf1);
-    cudaDeviceSynchronize();
     dev_In += threads * 24; // Consumed Message so far, every threads consumes 24 integers
 
 
@@ -223,6 +238,20 @@ void parsha256_on_gpu_test() {
     std::cout << parsha256_on_gpu("abc") << std::endl;
     std::cout << parsha256_on_gpu("abcdefgh") << std::endl;
     std::cout << parsha256_on_gpu(std::string(10000, 'a')) << std::endl;
+
+    parsha256_on_gpu("abc");
+    parsha256_on_gpu("abcdefgh");
+    parsha256_on_gpu(std::string(10000, 'a'));
+
+}
+
+void parsha256_on_gpu_bench() {
+
+    for (int i = 0; i < 9; i++) {
+        std::cout << std::pow(10, i) << std::endl;
+        parsha256_on_gpu(std::string(std::pow(10, i), 'a'), true);
+    }
+
 
 }
 
