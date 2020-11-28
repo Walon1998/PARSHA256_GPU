@@ -39,7 +39,7 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
 
     int L = in.size() * sizeof(char) * 8;
-    int T = 10; // Height of available processor tree
+    int T = 13; // Height of available processor tree
     int t = 0; // Effective height processor tree
     const int l = 0; // IV length
 
