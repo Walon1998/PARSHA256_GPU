@@ -90,7 +90,8 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
         for (int i = 0; i < diff - 1; i++) {
             padded[8 + i] = 0;
         }
-        padded[m / 32 - 1] = _byteswap_ulong(L);
+//        padded[m / 32 - 1] = _byteswap_ulong(L);
+        padded[m / 32 - 1] = L;
 
 
         gpuErrchk(cudaMemcpy(dev_ptr, padded.data(), 24 * sizeof(uint32_t), cudaMemcpyHostToDevice));
@@ -365,11 +366,10 @@ void parsha256_on_gpu_test() {
 
 }
 
-void parsha256_on_gpu_bench() {
+void parsha256_on_gpu_bench(int i) {
 
-    for (int i = 0; i < 9; i++) {
-        std::cout << std::pow(10, i) << ": " << parsha256_on_gpu(std::string(std::pow(10, i), 'a'), false) << std::endl << std::flush;
-    }
+
+    std::cout << std::pow(10, i) << ": " << parsha256_on_gpu(std::string(std::pow(10, i), 'a'), true) << std::endl << std::flush;
 
 
 }
