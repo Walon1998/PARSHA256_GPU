@@ -21,17 +21,17 @@ __global__ void parsha256_kernel_gpu_lastRound(int *__restrict__ input_message, 
 
 
 
-    if (b > 0) {
-        parsha256_sha256(buf_read_child1, buf_read_child2, input_message, out);
-
-    } else {
-        // Padding
-        for (int i = 0; i < 15; i++) {
-            buf_read_child1[8 + i] = 0;
-        }
-        buf_read_child1[23] = L;
-        parsha256_sha256(buf_read_child1, buf_read_child1 + 8, buf_read_child1 + 16, out);
+//    if (b > 0) {
+//        parsha256_sha256(buf_read_child1, buf_read_child2, input_message, out);
+//
+//    } else {
+    // Padding
+    for (int i = 0; i < 15; i++) {
+        buf_read_child1[8 + i] = 0;
     }
+    buf_read_child1[23] = L;
+    parsha256_sha256(buf_read_child1, buf_read_child1 + 8, buf_read_child1 + 16, out);
+//    }
 }
 
 #endif //SHA_ON_GPU_PARSHA256_KERNEL_LASTROUND_CUH

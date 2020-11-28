@@ -5,6 +5,16 @@
 #ifndef SHAONGPU_PARSHA256_ON_GPU_H
 #define SHAONGPU_PARSHA256_ON_GPU_H
 
+#define gpuErrchk(ans) { gpuAssert((ans), __FILE__, __LINE__); }
+
+inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort = true) {
+    if (code != cudaSuccess) {
+        fprintf(stderr, "GPUassert: %s %s %d\n", cudaGetErrorString(code), file, line);
+        if (abort) exit(code);
+    }
+}
+
+
 #include <cassert>
 #include <string>
 #include "parsha256_padding.h"
@@ -30,7 +40,7 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
     int L = in.size() * sizeof(char) * 8;
     int T = 10; // Height of available processor tree
-    int t; // Effective height processor tree
+    int t = 0; // Effective height processor tree
     const int l = 0; // IV length
 
     uint64_t q;
@@ -45,14 +55,18 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
 
         int *dev_ptr;
-        cudaMalloc(&dev_ptr, 24 * sizeof(uint32_t));
-        cudaMemcpy(dev_ptr, padded.data(), 24 * sizeof(uint32_t), cudaMemcpyHostToDevice);
+        gpuErrchk(cudaMalloc(&dev_ptr, 24 * sizeof(uint32_t)));
+        gpuErrchk(cudaMemcpy(dev_ptr, padded.data(), 24 * sizeof(uint32_t), cudaMemcpyHostToDevice));
 
         parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
-
+        gpuErrchk(cudaPeekAtLastError());
+        gpuErrchk(cudaDeviceSynchronize());
         if (benchmark) {
             for (int i = 0; i < 10; i++) {
                 parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+                gpuErrchk(cudaPeekAtLastError());
+                gpuErrchk(cudaDeviceSynchronize());
+
             }
             cudaProfilerStart();
             for (int i = 0; i < 100; i++) {
@@ -61,7 +75,7 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
             cudaProfilerStop();
         }
 
-        cudaMemcpy(padded.data(), dev_ptr, 8 * sizeof(int), cudaMemcpyDeviceToHost);
+        gpuErrchk(cudaMemcpy(padded.data(), dev_ptr, 8 * sizeof(int), cudaMemcpyDeviceToHost));
 
 
 
@@ -79,7 +93,7 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
         padded[m / 32 - 1] = _byteswap_ulong(L);
 
 
-        cudaMemcpy(dev_ptr, padded.data(), 24 * sizeof(uint32_t), cudaMemcpyHostToDevice);
+        gpuErrchk(cudaMemcpy(dev_ptr, padded.data(), 24 * sizeof(uint32_t), cudaMemcpyHostToDevice));
 
 
 //        for (int &i : padded) {
@@ -87,9 +101,13 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 //        }
 
         parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+        gpuErrchk(cudaPeekAtLastError());
+        gpuErrchk(cudaDeviceSynchronize());
         if (benchmark) {
             for (int i = 0; i < 10; i++) {
                 parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+                gpuErrchk(cudaPeekAtLastError());
+                gpuErrchk(cudaDeviceSynchronize());
             }
             cudaProfilerStart();
             for (int i = 0; i < 100; i++) {
@@ -98,7 +116,7 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
             cudaProfilerStop();
         }
 
-        cudaMemcpy(padded.data(), dev_ptr, 8 * sizeof(int), cudaMemcpyDeviceToHost);
+        gpuErrchk(cudaMemcpy(padded.data(), dev_ptr, 8 * sizeof(int), cudaMemcpyDeviceToHost));
 
 //        parsha256_sha256(padded.data(), padded.data() + 8, padded.data() + 16, padded.data()); // Write intermediate result to input buffer
 
@@ -110,9 +128,12 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
             res_string += buffer;
 
         }
+        gpuErrchk(cudaFree(dev_ptr));
+
         return res_string;
 
     } else if (L < delta(1)) {
+
         added_zeros_bits += delta(1) - L;
         L = delta(1);
     }
@@ -151,19 +172,22 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
 
     // 1. Padding
-    added_zeros_bits += b * (2 * n - 2 * m - l) - r; // How many zeros to padd in bits
+//    added_zeros_bits += b * (2 * n - 2 * m - l) - r; // How many zeros to padd in bits
 
     std::vector<int> padded;
 //    std::vector<int> padded = parsha256_padding(in, added_zeros_bits);
 
+    int middle_rounds;
 // Message Padding fix
     for (uint64_t i = 0;; i++) {
         uint64_t message_length = std::pow(2, t) * n
                                   + i * (std::pow(2, t - 1) * (n - 2 * m) + std::pow(2, t - 1) * n)
                                   + (n - 2 * m) * (std::pow(2, t));
 
-        if (message_length > L) {
-            uint64_t diff = message_length - L;
+        if (message_length >= L) {
+
+            uint64_t diff = message_length - L + added_zeros_bits;
+            middle_rounds = i;
             padded = parsha256_padding(in, diff);
             break;
         }
@@ -187,25 +211,35 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
     int *dev_buf2;
     int *out;
 
-    cudaMalloc(&dev_In, padded.size() * sizeof(uint32_t));
-    cudaMalloc(&dev_buf1, 8 * sizeof(int) * threads_per_threadsblock * thread_blocks);
-    cudaMalloc(&dev_buf2, 8 * sizeof(int) * threads_per_threadsblock * thread_blocks);
-    cudaMalloc(&out, 8 * sizeof(int));
 
-    cudaMemcpy(dev_In, padded.data(), padded.size() * sizeof(int), cudaMemcpyHostToDevice);
+    gpuErrchk(cudaMalloc(&dev_In, padded.size() * sizeof(uint32_t)));
+    gpuErrchk(cudaMalloc(&dev_buf1, 8 * sizeof(int) * std::max(threads_per_threadsblock * thread_blocks, 24)));
+    gpuErrchk(cudaMalloc(&dev_buf2, 8 * sizeof(int) * std::max(threads_per_threadsblock * thread_blocks, 24)));
+    gpuErrchk(cudaMalloc(&out, 8 * sizeof(int)));
+
+    int *dev_In_orignal = dev_In;
+    int *dev_buf1_original = dev_buf1;
+    int *dev_buf2_orignal = dev_buf2;
+    int *out_orignal = out;
+
+
+    gpuErrchk(cudaMemcpy(dev_In, padded.data(), padded.size() * sizeof(int), cudaMemcpyHostToDevice));
 
 //    // Cal kernel
 
 
 
-    int size_left = padded.size();
 
 
 // First Round
     parsha256_kernel_gpu_firstRound<<<threads_per_threadsblock, thread_blocks>>>(dev_In, dev_buf1);
+    gpuErrchk(cudaPeekAtLastError());
+    gpuErrchk(cudaDeviceSynchronize());
     if (benchmark) {
         for (int i = 0; i < 10; i++) {
             parsha256_kernel_gpu_firstRound<<<threads_per_threadsblock, thread_blocks>>>(dev_In, dev_buf1);
+            gpuErrchk(cudaPeekAtLastError());
+            gpuErrchk(cudaDeviceSynchronize());
         }
         cudaProfilerStart();
         for (int i = 0; i < 100; i++) {
@@ -218,14 +252,18 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
 
     // Rounds 2 to p + 1
-    const int p = R - t - 1;
+//    const int p = R - t - 1;
 
-    for (int i = 0; i < p; i++) {
+    for (int i = 0; i < middle_rounds; i++) {
 
         parsha256_kernel_gpu_middleRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+        gpuErrchk(cudaPeekAtLastError());
+        gpuErrchk(cudaDeviceSynchronize());
         if (benchmark) {
             for (int i = 0; i < 10; i++) {
                 parsha256_kernel_gpu_middleRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+                gpuErrchk(cudaPeekAtLastError());
+                gpuErrchk(cudaDeviceSynchronize());
             }
             cudaProfilerStart();
             for (int i = 0; i < 100; i++) {
@@ -236,7 +274,6 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
 
         dev_In += 8 * (threads / 2) + 24 * (threads / 2); // Consumed Message so far, half of the threads consume 8 ints (non leafs), other halfs consumes again 24 ints
-        size_left -= 8 * (threads / 2) + 24 * (threads / 2);
         std::swap(dev_buf1, dev_buf2);
     }
 
@@ -245,9 +282,13 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
     for (int i = 0; i < t; i++) {
 
         parsha256_kernel_gpu_decreasingRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+        gpuErrchk(cudaPeekAtLastError());
+        gpuErrchk(cudaDeviceSynchronize());
         if (benchmark) {
             for (int i = 0; i < 10; i++) {
                 parsha256_kernel_gpu_decreasingRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+                gpuErrchk(cudaPeekAtLastError());
+                gpuErrchk(cudaDeviceSynchronize());
             }
             cudaProfilerStart();
             for (int i = 0; i < 100; i++) {
@@ -259,7 +300,6 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
         threads /= 2;
         threads_per_threadsblock = std::min(128, threads);
         dev_In += 8 * threads; // Half of the thread consume 8 ints the other half copy their stuff around
-        size_left -= 8 * threads;
         thread_blocks = (threads_per_threadsblock + threads - 1) / threads_per_threadsblock;
 
     }
@@ -268,9 +308,13 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 //    assert(threads == 1)
     dev_In += 8;
     parsha256_kernel_gpu_lastRound<<<1, 1>>>(dev_In, dev_buf1, dev_buf2, out, b, L);
+    gpuErrchk(cudaPeekAtLastError());
+    gpuErrchk(cudaDeviceSynchronize());
     if (benchmark) {
         for (int i = 0; i < 10; i++) {
             parsha256_kernel_gpu_lastRound<<<1, 1>>>(dev_In, dev_buf1, dev_buf2, out, b, L);
+            gpuErrchk(cudaPeekAtLastError());
+            gpuErrchk(cudaDeviceSynchronize());
         }
         cudaProfilerStart();
         for (int i = 0; i < 100; i++) {
@@ -283,7 +327,7 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
 //    // Copy result back
     std::vector<int> res_int(8);
-    cudaMemcpy(res_int.data(), out, 8 * sizeof(int), cudaMemcpyDeviceToHost);
+    gpuErrchk(cudaMemcpy(res_int.data(), out, 8 * sizeof(int), cudaMemcpyDeviceToHost));
 
 
     // Convert Result to String
@@ -295,6 +339,17 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
         res_string += buffer;
 
     }
+
+
+    gpuErrchk(cudaFree(dev_In_orignal));
+
+    gpuErrchk(cudaFree(dev_buf1_original));
+
+    gpuErrchk(cudaFree(dev_buf2_orignal));
+
+    gpuErrchk(cudaFree(out_orignal));
+
+
     return res_string;
 }
 
@@ -313,7 +368,7 @@ void parsha256_on_gpu_test() {
 void parsha256_on_gpu_bench() {
 
     for (int i = 0; i < 9; i++) {
-        std::cout << std::pow(10, i) << ": " << parsha256_on_gpu(std::string(std::pow(10, i), 'a'), true) << std::endl;
+        std::cout << std::pow(10, i) << ": " << parsha256_on_gpu(std::string(std::pow(10, i), 'a'), false) << std::endl << std::flush;
     }
 
 
