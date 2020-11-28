@@ -16,6 +16,7 @@
 #include "parsha256_kernel_lastRound.cuh"
 #include "parsha256_kernel_singleInvocation.cuh"
 #include <sstream>
+#include "cuda_profiler_api.h"
 
 
 std::string parsha256_on_gpu(const std::string in, const bool benchmark = false) {
@@ -37,7 +38,6 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
     uint64_t b;
 
 
-
     if (L <= delta(0)) {
 
 
@@ -49,6 +49,17 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
         cudaMemcpy(dev_ptr, padded.data(), 24 * sizeof(uint32_t), cudaMemcpyHostToDevice);
 
         parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+
+        if (benchmark) {
+            for (int i = 0; i < 10; i++) {
+                parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+            }
+            cudaProfilerStart();
+            for (int i = 0; i < 100; i++) {
+                parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+            }
+            cudaProfilerStop();
+        }
 
         cudaMemcpy(padded.data(), dev_ptr, 8 * sizeof(int), cudaMemcpyDeviceToHost);
 
@@ -67,6 +78,7 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
         }
         padded[m / 32 - 1] = _byteswap_ulong(L);
 
+
         cudaMemcpy(dev_ptr, padded.data(), 24 * sizeof(uint32_t), cudaMemcpyHostToDevice);
 
 
@@ -75,6 +87,16 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 //        }
 
         parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+        if (benchmark) {
+            for (int i = 0; i < 10; i++) {
+                parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+            }
+            cudaProfilerStart();
+            for (int i = 0; i < 100; i++) {
+                parsha256_kernel_gpu_singleInvocation<<<1, 1>>>(dev_ptr, dev_ptr);
+            }
+            cudaProfilerStop();
+        }
 
         cudaMemcpy(padded.data(), dev_ptr, 8 * sizeof(int), cudaMemcpyDeviceToHost);
 
@@ -181,6 +203,17 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
 // First Round
     parsha256_kernel_gpu_firstRound<<<threads_per_threadsblock, thread_blocks>>>(dev_In, dev_buf1);
+    if (benchmark) {
+        for (int i = 0; i < 10; i++) {
+            parsha256_kernel_gpu_firstRound<<<threads_per_threadsblock, thread_blocks>>>(dev_In, dev_buf1);
+        }
+        cudaProfilerStart();
+        for (int i = 0; i < 100; i++) {
+            parsha256_kernel_gpu_firstRound<<<threads_per_threadsblock, thread_blocks>>>(dev_In, dev_buf1);
+        }
+        cudaProfilerStop();
+    }
+
     dev_In += threads * 24; // Consumed Message so far, every threads consumes 24 integers
 
 
@@ -190,6 +223,18 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
     for (int i = 0; i < p; i++) {
 
         parsha256_kernel_gpu_middleRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+        if (benchmark) {
+            for (int i = 0; i < 10; i++) {
+                parsha256_kernel_gpu_middleRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+            }
+            cudaProfilerStart();
+            for (int i = 0; i < 100; i++) {
+                parsha256_kernel_gpu_middleRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+            }
+            cudaProfilerStop();
+        }
+
+
         dev_In += 8 * (threads / 2) + 24 * (threads / 2); // Consumed Message so far, half of the threads consume 8 ints (non leafs), other halfs consumes again 24 ints
         size_left -= 8 * (threads / 2) + 24 * (threads / 2);
         std::swap(dev_buf1, dev_buf2);
@@ -200,6 +245,16 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
     for (int i = 0; i < t; i++) {
 
         parsha256_kernel_gpu_decreasingRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+        if (benchmark) {
+            for (int i = 0; i < 10; i++) {
+                parsha256_kernel_gpu_decreasingRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+            }
+            cudaProfilerStart();
+            for (int i = 0; i < 100; i++) {
+                parsha256_kernel_gpu_decreasingRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+            }
+            cudaProfilerStop();
+        }
         std::swap(dev_buf1, dev_buf2);
         threads /= 2;
         threads_per_threadsblock = std::min(128, threads);
@@ -213,6 +268,16 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 //    assert(threads == 1)
     dev_In += 8;
     parsha256_kernel_gpu_lastRound<<<1, 1>>>(dev_In, dev_buf1, dev_buf2, out, b, L);
+    if (benchmark) {
+        for (int i = 0; i < 10; i++) {
+            parsha256_kernel_gpu_lastRound<<<1, 1>>>(dev_In, dev_buf1, dev_buf2, out, b, L);
+        }
+        cudaProfilerStart();
+        for (int i = 0; i < 100; i++) {
+            parsha256_kernel_gpu_lastRound<<<1, 1>>>(dev_In, dev_buf1, dev_buf2, out, b, L);
+        }
+        cudaProfilerStop();
+    }
 
 
 
@@ -248,8 +313,7 @@ void parsha256_on_gpu_test() {
 void parsha256_on_gpu_bench() {
 
     for (int i = 0; i < 9; i++) {
-        std::cout << std::pow(10, i) << std::endl;
-        parsha256_on_gpu(std::string(std::pow(10, i), 'a'), true);
+        std::cout << std::pow(10, i) << ": " << parsha256_on_gpu(std::string(std::pow(10, i), 'a'), true) << std::endl;
     }
 
 
