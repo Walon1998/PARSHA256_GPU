@@ -39,18 +39,10 @@ __device__ __host__ void parsha256_sha256(const int *__restrict__ in_0, const in
     reinterpret_cast<int4 *>(W)[0] = reinterpret_cast< const int4 *>(in_8)[0];
     reinterpret_cast<int4 *>(W)[1] = reinterpret_cast< const int4 *>(in_8)[1];
 
-    // File Message Schedule
-//#pragma unroll
-//    for (int j = 0; j < 8; j++) {
-//        W[j] = in_8[j];
-//    }
     reinterpret_cast<int4 *>(W)[2] = reinterpret_cast< const int4 *>(in_16)[0];
     reinterpret_cast<int4 *>(W)[3] = reinterpret_cast< const int4 *>(in_16)[1];
 
-//#pragma unroll
-//    for (int j = 0; j < 8; j++) {
-//        W[j + 8] = in_16[j];
-//    }
+
 
 
 
