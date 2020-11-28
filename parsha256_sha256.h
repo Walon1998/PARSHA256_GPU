@@ -21,14 +21,10 @@ __device__ __host__ void parsha256_sha256(const int *__restrict__ in_0, const in
              0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208, 0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2};
 
     // Initial Hash values are first 8 ints of input
-    uint32_t H0 = in_0[0];
-    uint32_t H1 = in_0[1];
-    uint32_t H2 = in_0[2];
-    uint32_t H3 = in_0[3];
-    uint32_t H4 = in_0[4];
-    uint32_t H5 = in_0[5];
-    uint32_t H6 = in_0[6];
-    uint32_t H7 = in_0[7];
+
+    register uint32_t H[8];
+    reinterpret_cast<int4 *>(H)[0] = reinterpret_cast< const int4 *>(in_0)[0];
+    reinterpret_cast<int4 *>(H)[1] = reinterpret_cast< const int4 *>(in_0)[1];
 
 
     uint32_t W[64];
@@ -36,13 +32,14 @@ __device__ __host__ void parsha256_sha256(const int *__restrict__ in_0, const in
 
     // File Message Schedule
 #pragma unroll
-    for (int j = 0; j < 8; j++) {
-        W[j] = in_8[j];
+    for (int j = 0; j < 2; j++) {
+        reinterpret_cast<int4 *>(H)[j] = reinterpret_cast< const int4 *>(in_8)[j];
     }
 
+
 #pragma unroll
-    for (int j = 0; j < 8; j++) {
-        W[j + 8] = in_16[j];
+    for (int j = 0; j < 2; j++) {
+        reinterpret_cast<int4 *>(H)[2 + j] = reinterpret_cast< const int4 *>(in_16)[j];
     }
 
 
@@ -63,14 +60,14 @@ __device__ __host__ void parsha256_sha256(const int *__restrict__ in_0, const in
 
 
     // Initial Hash values
-    uint32_t a = H0;
-    uint32_t b = H1;
-    uint32_t c = H2;
-    uint32_t d = H3;
-    uint32_t e = H4;
-    uint32_t f = H5;
-    uint32_t g = H6;
-    uint32_t h = H7;
+    uint32_t a = H[0];
+    uint32_t b = H[1];
+    uint32_t c = H[2];
+    uint32_t d = H[3];
+    uint32_t e = H[4];
+    uint32_t f = H[5];
+    uint32_t g = H[6];
+    uint32_t h = H[7];
 
 #pragma unroll
     for (int j = 0; j < 64; j++) {
@@ -87,24 +84,17 @@ __device__ __host__ void parsha256_sha256(const int *__restrict__ in_0, const in
         a = T1 + T2;
     }
 
-    H0 += a;
-    H1 += b;
-    H2 += c;
-    H3 += d;
-    H4 += e;
-    H5 += f;
-    H6 += g;
-    H7 += h;
+    H[0] += a;
+    H[1] += b;
+    H[2] += c;
+    H[3] += d;
+    H[4] += e;
+    H[5] += f;
+    H[6] += g;
+    H[7] += h;
 
-
-    out[0] = H0;
-    out[1] = H1;
-    out[2] = H2;
-    out[3] = H3;
-    out[4] = H4;
-    out[5] = H5;
-    out[6] = H6;
-    out[7] = H7;
+    reinterpret_cast<int4 *>(out)[0] = reinterpret_cast< const int4 *>(H)[0];
+    reinterpret_cast<int4 *>(out)[1] = reinterpret_cast< const int4 *>(H)[1];
 }
 
 #endif //SHA_ON_GPU_PARSHA256_SHA256_H

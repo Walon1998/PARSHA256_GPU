@@ -2,6 +2,7 @@
 
 module load cuda
 module load gcc
+export CUDA_AUTO_BOOST=0
 nvcc main.cu -O3 -std=c++11 -gencode arch=compute_70,code=sm_70
 nvprof --concurrent-kernels off --csv --profile-from-start off --print-gpu-trace --log-file Result/GPU_0.csv ./a.out 0
 nvprof --concurrent-kernels off --csv --profile-from-start off --print-gpu-trace --log-file Result/GPU_1.csv ./a.out 1
