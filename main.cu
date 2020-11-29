@@ -1,9 +1,13 @@
 #include <iostream>
 #include "parsha256_on_gpu.h"
-int main(int argc, char* argv[]) {
+
+int main(int argc, char *argv[]) {
 
 
-//    parsha256_on_gpu_test();
-    parsha256_on_gpu_bench(atoi(argv[1]));
+    parsha256_on_gpu_test();
+    if (argc == 2) {
+        parsha256_on_gpu_bench(atoi(argv[1]));
+    }
+
     return 0;
 }
