@@ -233,18 +233,18 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
 
 // First Round
-    parsha256_kernel_gpu_firstRound<<<threads_per_threadsblock, thread_blocks>>>(dev_In, dev_buf1);
+    parsha256_kernel_gpu_firstRound<<<thread_blocks, threads_per_threadsblock>>>(dev_In, dev_buf1);
     gpuErrchk(cudaPeekAtLastError());
     gpuErrchk(cudaDeviceSynchronize());
     if (benchmark) {
         for (int i = 0; i < 10; i++) {
-            parsha256_kernel_gpu_firstRound<<<threads_per_threadsblock, thread_blocks>>>(dev_In, dev_buf1);
+            parsha256_kernel_gpu_firstRound<<<thread_blocks, threads_per_threadsblock>>>(dev_In, dev_buf1);
             gpuErrchk(cudaPeekAtLastError());
             gpuErrchk(cudaDeviceSynchronize());
         }
         cudaProfilerStart();
         for (int i = 0; i < 100; i++) {
-            parsha256_kernel_gpu_firstRound<<<threads_per_threadsblock, thread_blocks>>>(dev_In, dev_buf1);
+            parsha256_kernel_gpu_firstRound<<<thread_blocks, threads_per_threadsblock>>>(dev_In, dev_buf1);
         }
         cudaProfilerStop();
     }
@@ -257,18 +257,18 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 
     for (int i = 0; i < middle_rounds; i++) {
 
-        parsha256_kernel_gpu_middleRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+        parsha256_kernel_gpu_middleRound<<<thread_blocks, threads_per_threadsblock>>>(dev_In, dev_buf1, dev_buf2);
         gpuErrchk(cudaPeekAtLastError());
         gpuErrchk(cudaDeviceSynchronize());
         if (benchmark) {
             for (int i = 0; i < 10; i++) {
-                parsha256_kernel_gpu_middleRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+                parsha256_kernel_gpu_middleRound<<<thread_blocks, threads_per_threadsblock>>>(dev_In, dev_buf1, dev_buf2);
                 gpuErrchk(cudaPeekAtLastError());
                 gpuErrchk(cudaDeviceSynchronize());
             }
             cudaProfilerStart();
             for (int i = 0; i < 100; i++) {
-                parsha256_kernel_gpu_middleRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+                parsha256_kernel_gpu_middleRound<<<thread_blocks, threads_per_threadsblock>>>(dev_In, dev_buf1, dev_buf2);
             }
             cudaProfilerStop();
         }
@@ -282,18 +282,18 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
     // Decreasing Rounds
     for (int i = 0; i < t; i++) {
 
-        parsha256_kernel_gpu_decreasingRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+        parsha256_kernel_gpu_decreasingRound<<<thread_blocks, threads_per_threadsblock>>>(dev_In, dev_buf1, dev_buf2);
         gpuErrchk(cudaPeekAtLastError());
         gpuErrchk(cudaDeviceSynchronize());
         if (benchmark) {
             for (int i = 0; i < 10; i++) {
-                parsha256_kernel_gpu_decreasingRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+                parsha256_kernel_gpu_decreasingRound<<<thread_blocks, threads_per_threadsblock>>>(dev_In, dev_buf1, dev_buf2);
                 gpuErrchk(cudaPeekAtLastError());
                 gpuErrchk(cudaDeviceSynchronize());
             }
             cudaProfilerStart();
             for (int i = 0; i < 100; i++) {
-                parsha256_kernel_gpu_decreasingRound<<<threads_per_threadsblock, thread_blocks >>>(dev_In, dev_buf1, dev_buf2);
+                parsha256_kernel_gpu_decreasingRound<<<thread_blocks, threads_per_threadsblock>>>(dev_In, dev_buf1, dev_buf2);
             }
             cudaProfilerStop();
         }
