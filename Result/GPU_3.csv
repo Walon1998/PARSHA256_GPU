@@ -1,505 +1,505 @@
-==87180== NVPROF is profiling process 87180, command: ./a.out 3
-==87180== Profiling application: ./a.out 3
-==87180== Profiling result:
+==88691== NVPROF is profiling process 88691, command: ./a.out 3
+==88691== Profiling application: ./a.out 3
+==88691== Profiling result:
 "Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Device","Context","Stream","Name","Correlation_ID"
 s,us,,,,,,,,B,B,,,,,
-0.390871,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",13
-0.390883,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",14
-0.390894,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",15
-0.390905,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",16
-0.390915,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",17
-0.390926,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",18
-0.390936,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",19
-0.390947,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",20
-0.390957,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",21
-0.390968,7.135000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",22
-0.390978,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",23
-0.390989,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",24
-0.390999,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",25
-0.391010,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",26
-0.391020,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",27
-0.391031,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",28
-0.391041,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",29
-0.391052,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",30
-0.391062,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",31
-0.391073,7.456000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",32
-0.391084,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",33
-0.391094,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",34
-0.391105,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",35
-0.391115,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",36
-0.391126,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",37
-0.391136,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",38
-0.391147,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",39
-0.391157,7.135000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",40
-0.391168,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",41
-0.391178,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",42
-0.391189,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",43
-0.391199,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",44
-0.391210,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",45
-0.391220,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",46
-0.391231,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",47
-0.391241,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",48
-0.391252,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",49
-0.391263,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",50
-0.391273,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",51
-0.391284,7.392000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",52
-0.391294,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",53
-0.391305,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",54
-0.391315,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",55
-0.391326,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",56
-0.391336,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",57
-0.391347,7.135000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",58
-0.391358,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",59
-0.391368,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",60
-0.391378,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",61
-0.391389,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",62
-0.391399,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",63
-0.391410,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",64
-0.391421,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",65
-0.391431,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",66
-0.391442,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",67
-0.391452,7.104000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",68
-0.391463,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",69
-0.391473,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",70
-0.391484,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",71
-0.391494,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",72
-0.391505,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",73
-0.391515,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",74
-0.391526,7.232000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",75
-0.391536,7.103000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",76
-0.391547,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",77
-0.391557,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",78
-0.391568,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",79
-0.391578,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",80
-0.391589,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",81
-0.391599,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",82
-0.391610,7.104000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",83
-0.391620,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",84
-0.391631,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",85
-0.391641,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",86
-0.391652,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",87
-0.391662,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",88
-0.391673,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",89
-0.391683,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",90
-0.391694,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",91
-0.391704,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",92
-0.391715,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",93
-0.391725,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",94
-0.391736,7.360000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",95
-0.391747,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",96
-0.391757,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",97
-0.391768,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",98
-0.391778,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",99
-0.391789,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",100
-0.391799,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",101
-0.391810,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",102
-0.391820,7.264000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",103
-0.391831,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",104
-0.391841,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",105
-0.391852,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",106
-0.391863,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",107
-0.391873,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",108
-0.391883,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",109
-0.391894,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",110
-0.391904,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",111
-0.391915,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",112
-2.404300,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",148
-2.404311,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",149
-2.404321,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",150
-2.404332,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",151
-2.404343,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",152
-2.404354,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",153
-2.404365,7.487000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",154
-2.404376,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",155
-2.404387,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",156
-2.404398,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",157
-2.404409,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",158
-2.404420,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",159
-2.404431,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",160
-2.404442,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",161
-2.404453,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",162
-2.404464,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",163
-2.404474,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",164
-2.404485,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",165
-2.404496,7.552000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",166
-2.404507,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",167
-2.404518,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",168
-2.404529,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",169
-2.404540,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",170
-2.404551,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",171
-2.404562,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",172
-2.404573,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",173
-2.404584,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",174
-2.404595,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",175
-2.404606,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",176
-2.404616,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",177
-2.404627,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",178
-2.404638,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",179
-2.404649,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",180
-2.404660,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",181
-2.404671,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",182
-2.404682,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",183
-2.404693,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",184
-2.404704,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",185
-2.404715,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",186
-2.404726,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",187
-2.404737,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",188
-2.404747,7.487000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",189
-2.404758,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",190
-2.404769,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",191
-2.404780,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",192
-2.404791,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",193
-2.404802,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",194
-2.404813,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",195
-2.404824,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",196
-2.404835,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",197
-2.404846,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",198
-2.404857,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",199
-2.404868,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",200
-2.404878,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",201
-2.404889,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",202
-2.404900,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",203
-2.404911,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",204
-2.404922,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",205
-2.404933,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",206
-2.404944,7.487000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",207
-2.404955,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",208
-2.404966,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",209
-2.404977,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",210
-2.404988,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",211
-2.404998,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",212
-2.405009,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",213
-2.405020,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",214
-2.405031,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",215
-2.405042,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",216
-2.405053,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",217
-2.405064,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",218
-2.405075,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",219
-2.405086,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",220
-2.405097,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",221
-2.405107,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",222
-2.405118,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",223
-2.405129,7.487000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",224
-2.405140,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",225
-2.405151,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",226
-2.405162,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",227
-2.405173,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",228
-2.405184,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",229
-2.405195,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",230
-2.405206,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",231
-2.405217,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",232
-2.405228,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",233
-2.405238,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",234
-2.405249,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",235
-2.405260,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",236
-2.405271,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",237
-2.405282,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",238
-2.405293,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",239
-2.405304,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",240
-2.405315,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",241
-2.405326,7.519000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",242
-2.405337,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",243
-2.405348,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",244
-2.405359,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",245
-2.405370,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",246
-2.405380,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",247
-4.417658,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",283
-4.417669,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",284
-4.417680,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",285
-4.417691,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",286
-4.417702,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",287
-4.417713,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",288
-4.417724,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",289
-4.417735,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",290
-4.417746,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",291
-4.417757,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",292
-4.417768,7.519000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",293
-4.417779,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",294
-4.417790,7.776000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",295
-4.417801,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",296
-4.417812,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",297
-4.417823,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",298
-4.417834,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",299
-4.417845,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",300
-4.417856,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",301
-4.417867,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",302
-4.417878,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",303
-4.417889,7.456000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",304
-4.417900,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",305
-4.417911,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",306
-4.417922,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",307
-4.417933,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",308
-4.417944,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",309
-4.417955,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",310
-4.417966,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",311
-4.417976,7.456000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",312
-4.417987,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",313
-4.417998,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",314
-4.418009,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",315
-4.418020,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",316
-4.418031,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",317
-4.418042,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",318
-4.418053,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",319
-4.418064,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",320
-4.418075,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",321
-4.418086,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",322
-4.418097,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",323
-4.418108,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",324
-4.418119,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",325
-4.418130,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",326
-4.418141,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",327
-4.418151,7.487000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",328
-4.418162,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",329
-4.418173,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",330
-4.418184,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",331
-4.418190,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",333
-4.418196,7.776000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",332
-4.418201,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",334
-4.418212,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",335
-4.418223,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",336
-4.418234,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",337
-4.418245,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",338
-4.418256,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",339
-4.418266,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",340
-4.418277,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",341
-4.418288,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",342
-4.418299,7.456000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",343
-4.418310,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",344
-4.418321,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",345
-4.418332,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",346
-4.418343,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",347
-4.418354,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",348
-4.418365,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",349
-4.418376,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",350
-4.418387,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",351
-4.418398,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",352
-4.418409,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",353
-4.418420,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",354
-4.418430,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",355
-4.418441,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",356
-4.418452,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",357
-4.418463,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",358
-4.418474,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",359
-4.418485,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",360
-4.418496,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",361
-4.418507,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",362
-4.418518,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",363
-4.418529,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",364
-4.418540,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",365
-4.418551,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",366
-4.418562,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",367
-4.418573,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",368
-4.418583,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",369
-4.418594,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",370
-4.418605,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",371
-4.418616,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",372
-4.418627,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",373
-4.418638,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",374
-4.418649,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",375
-4.418660,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",376
-4.418671,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",377
-4.418682,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",378
-4.418693,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",379
-4.418704,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",380
-4.418714,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",381
-4.418725,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",382
-6.430925,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",418
-6.430936,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",419
-6.430947,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",420
-6.430958,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",421
-6.430969,7.520000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",422
-6.430980,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",423
-6.430990,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",424
-6.431001,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",425
-6.431012,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",426
-6.431023,7.391000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",427
-6.431034,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",428
-6.431045,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",429
-6.431055,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",430
-6.431066,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",431
-6.431077,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",432
-6.431088,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",433
-6.431099,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",434
-6.431109,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",435
-6.431120,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",436
-6.431131,7.423000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",437
-6.431142,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",438
-6.431153,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",439
-6.431164,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",440
-6.431174,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",441
-6.431185,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",442
-6.431196,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",443
-6.431207,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",444
-6.431217,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",445
-6.431228,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",446
-6.431239,7.423000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",447
-6.431250,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",448
-6.431261,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",449
-6.431271,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",450
-6.431282,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",451
-6.431293,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",452
-6.431304,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",453
-6.431315,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",454
-6.431326,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",455
-6.431336,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",456
-6.431347,7.455000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",457
-6.431358,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",458
-6.431369,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",459
-6.431379,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",460
-6.431390,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",461
-6.431401,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",462
-6.431412,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",463
-6.431423,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",464
-6.431433,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",465
-6.431444,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",466
-6.431455,7.423000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",467
-6.431466,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",468
-6.431477,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",469
-6.431487,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",470
-6.431498,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",471
-6.431509,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",472
-6.431520,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",473
-6.431531,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",474
-6.431541,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",475
-6.431552,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",476
-6.431563,7.455000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",477
-6.431574,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",478
-6.431585,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",479
-6.431595,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",480
-6.431606,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",481
-6.431617,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",482
-6.431628,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",483
-6.431639,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",484
-6.431649,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",485
-6.431660,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",486
-6.431671,7.487000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",487
-6.431682,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",488
-6.431692,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",489
-6.431703,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",490
-6.431714,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",491
-6.431725,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",492
-6.431736,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",493
-6.431747,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",494
-6.431757,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",495
-6.431768,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",496
-6.431779,7.455000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",497
-6.431790,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",498
-6.431801,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",499
-6.431811,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",500
-6.431822,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",501
-6.431833,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",502
-6.431844,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",503
-6.431854,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",504
-6.431866,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",505
-6.431876,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",506
-6.431887,7.423000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",507
-6.431898,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",508
-6.431909,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",509
-6.431919,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",510
-6.431930,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",511
-6.431941,7.392000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",512
-6.431952,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",513
-6.431963,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",514
-6.431973,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",515
-6.431984,7.424000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",516
-6.431995,7.423000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",517
-8.444102,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",553
-8.444112,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",554
-8.444123,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",555
-8.444133,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",556
-8.444144,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",557
-8.444155,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",558
-8.444165,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",559
-8.444176,7.359000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",560
-8.444186,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",561
-8.444197,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",562
-8.444208,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",563
-8.444218,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",564
-8.444229,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",565
-8.444239,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",566
-8.444250,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",567
-8.444260,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",568
-8.444271,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",569
-8.444282,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",570
-8.444292,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",571
-8.444303,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",572
-8.444313,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",573
-8.444324,7.424000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",574
-8.444335,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",575
-8.444345,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",576
-8.444356,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",577
-8.444366,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",578
-8.444377,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",579
-8.444387,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",580
-8.444398,7.199000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",581
-8.444409,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",582
-8.444419,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",583
-8.444430,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",584
-8.444440,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",585
-8.444451,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",586
-8.444462,7.136000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",587
-8.444472,7.360000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",588
-8.444483,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",589
-8.444493,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",590
-8.444504,7.167000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",591
-8.444514,7.136000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",592
-8.444525,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",593
-8.444535,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",594
-8.444546,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",595
-8.444557,7.136000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",596
-8.444567,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",597
-8.444578,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",598
-8.444589,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",599
-8.444599,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",600
-8.444610,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",601
-8.444620,7.424000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",602
-8.444631,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",603
-8.444642,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",604
-8.444652,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",605
-8.444663,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",606
-8.444673,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",607
-8.444684,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",608
-8.444694,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",609
-8.444705,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",610
-8.444716,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",611
-8.444726,7.135000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",612
-8.444737,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",613
-8.444747,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",614
-8.444758,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",615
-8.444768,7.392000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",616
-8.444779,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",617
-8.444790,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",618
-8.444800,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",619
-8.444811,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",620
-8.444821,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",621
-8.444832,7.199000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",622
-8.444842,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",623
-8.444853,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",624
-8.444864,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",625
-8.444874,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",626
-8.444885,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",627
-8.444896,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",628
-8.444906,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",629
-8.444917,7.424000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",630
-8.444927,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",631
-8.444938,7.167000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",632
-8.444948,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",633
-8.444959,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",634
-8.444970,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",635
-8.444980,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",636
-8.444991,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",637
-8.445001,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",638
-8.445013,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",639
-8.445024,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",640
-8.445034,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",641
-8.445045,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",642
-8.445064,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",643
-8.445074,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",644
-8.445085,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",645
-8.445096,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",646
-8.445106,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",647
-8.445117,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",648
-8.445127,7.392000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",649
-8.445138,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",650
-8.445149,7.168000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",651
-8.445159,7.167000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",652
+0.389551,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",13
+0.389563,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",14
+0.389574,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",15
+0.389584,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",16
+0.389595,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",17
+0.389606,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",18
+0.389616,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",19
+0.389627,7.360000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",20
+0.389638,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",21
+0.389648,7.167000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",22
+0.389659,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",23
+0.389669,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",24
+0.389680,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",25
+0.389690,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",26
+0.389701,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",27
+0.389711,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",28
+0.389722,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",29
+0.389733,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",30
+0.389743,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",31
+0.389754,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",32
+0.389764,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",33
+0.389775,7.456000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",34
+0.389786,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",35
+0.389796,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",36
+0.389807,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",37
+0.389817,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",38
+0.389828,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",39
+0.389838,7.135000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",40
+0.389849,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",41
+0.389860,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",42
+0.389870,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",43
+0.389881,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",44
+0.389892,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",45
+0.389902,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",46
+0.389913,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",47
+0.389923,7.424000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",48
+0.389934,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",49
+0.389945,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",50
+0.389955,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",51
+0.389966,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",52
+0.389976,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",53
+0.389987,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",54
+0.389997,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",55
+0.390008,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",56
+0.390018,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",57
+0.390029,7.135000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",58
+0.390040,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",59
+0.390050,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",60
+0.390061,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",61
+0.390071,7.456000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",62
+0.390082,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",63
+0.390093,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",64
+0.390103,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",65
+0.390114,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",66
+0.390124,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",67
+0.390135,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",68
+0.390145,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",69
+0.390156,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",70
+0.390167,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",71
+0.390177,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",72
+0.390188,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",73
+0.390199,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",74
+0.390209,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",75
+0.390220,7.391000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",76
+0.390230,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",77
+0.390241,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",78
+0.390251,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",79
+0.390262,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",80
+0.390272,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",81
+0.390283,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",82
+0.390293,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",83
+0.390304,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",84
+0.390314,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",85
+0.390325,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",86
+0.390336,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",87
+0.390346,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",88
+0.390357,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",89
+0.390367,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",90
+0.390378,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",91
+0.390389,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",92
+0.390399,7.264000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",93
+0.390410,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",94
+0.390420,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",95
+0.390431,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",96
+0.390441,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",97
+0.390452,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",98
+0.390462,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",99
+0.390473,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",100
+0.390483,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",101
+0.390494,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",102
+0.390505,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",103
+0.390516,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",104
+0.390526,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",105
+0.390537,7.200000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",106
+0.390547,7.456000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",107
+0.390558,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",108
+0.390568,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",109
+0.390579,7.168000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",110
+0.390590,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",111
+0.390600,7.136000,1,1,1,8,1,1,47,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_firstRound(int*, int*)",112
+2.403140,18.016000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",148
+2.403164,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",149
+2.403175,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",150
+2.403186,7.776000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",151
+2.403197,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",152
+2.403208,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",153
+2.403220,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",154
+2.403230,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",155
+2.403241,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",156
+2.403252,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",157
+2.403263,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",158
+2.403274,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",159
+2.403285,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",160
+2.403296,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",161
+2.403307,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",162
+2.403318,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",163
+2.403329,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",164
+2.403340,7.552000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",165
+2.403351,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",166
+2.403361,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",167
+2.403372,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",168
+2.403383,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",169
+2.403394,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",170
+2.403405,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",171
+2.403416,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",172
+2.403427,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",173
+2.403438,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",174
+2.403449,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",175
+2.403460,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",176
+2.403471,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",177
+2.403481,7.551000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",178
+2.403493,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",179
+2.403504,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",180
+2.403514,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",181
+2.403525,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",182
+2.403536,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",183
+2.403547,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",184
+2.403558,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",185
+2.403569,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",186
+2.403580,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",187
+2.403591,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",188
+2.403602,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",189
+2.403613,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",190
+2.403624,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",191
+2.403634,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",192
+2.403645,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",193
+2.403656,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",194
+2.403667,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",195
+2.403678,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",196
+2.403689,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",197
+2.403700,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",198
+2.403711,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",199
+2.403722,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",200
+2.403733,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",201
+2.403744,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",202
+2.403754,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",203
+2.403766,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",204
+2.403776,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",205
+2.403787,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",206
+2.403798,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",207
+2.403809,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",208
+2.403820,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",209
+2.403831,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",210
+2.403842,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",211
+2.403853,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",212
+2.403864,7.519000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",213
+2.403875,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",214
+2.403886,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",215
+2.403897,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",216
+2.403907,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",217
+2.403918,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",218
+2.403929,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",219
+2.403940,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",220
+2.403951,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",221
+2.403962,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",222
+2.403973,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",223
+2.403984,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",224
+2.403995,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",225
+2.404006,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",226
+2.404017,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",227
+2.404027,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",228
+2.404039,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",229
+2.404049,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",230
+2.404060,7.487000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",231
+2.404071,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",232
+2.404082,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",233
+2.404093,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",234
+2.404104,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",235
+2.404115,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",236
+2.404126,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",237
+2.404137,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",238
+2.404148,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",239
+2.404159,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",240
+2.404170,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",241
+2.404180,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",242
+2.404191,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",243
+2.404202,7.456000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",244
+2.404213,7.520000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",245
+2.404224,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",246
+2.404235,7.488000,1,1,1,8,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",247
+4.416563,18.912000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",283
+4.416589,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",284
+4.416599,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",285
+4.416610,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",286
+4.416621,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",287
+4.416632,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",288
+4.416643,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",289
+4.416654,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",290
+4.416665,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",291
+4.416676,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",292
+4.416687,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",293
+4.416698,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",294
+4.416709,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",295
+4.416720,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",296
+4.416731,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",297
+4.416742,7.519000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",298
+4.416753,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",299
+4.416764,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",300
+4.416775,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",301
+4.416786,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",302
+4.416797,7.808000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",303
+4.416809,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",304
+4.416819,7.584000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",305
+4.416831,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",306
+4.416842,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",307
+4.416853,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",308
+4.416864,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",309
+4.416875,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",310
+4.416886,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",311
+4.416897,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",312
+4.416908,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",313
+4.416919,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",314
+4.416930,7.807000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",315
+4.416941,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",316
+4.416952,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",317
+4.416963,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",318
+4.416974,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",319
+4.416985,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",320
+4.416996,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",321
+4.417007,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",322
+4.417018,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",323
+4.417029,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",324
+4.417040,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",325
+4.417051,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",326
+4.417062,12.224000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",327
+4.417078,7.808000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",328
+4.417089,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",329
+4.417100,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",330
+4.417111,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",331
+4.417122,7.519000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",332
+4.417133,7.584000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",333
+4.417144,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",334
+4.417155,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",335
+4.417166,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",336
+4.417177,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",337
+4.417188,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",338
+4.417199,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",339
+4.417210,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",340
+4.417215,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",342
+4.417221,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",341
+4.417226,7.519000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",343
+4.417237,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",344
+4.417248,7.776000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",345
+4.417259,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",346
+4.417270,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",347
+4.417281,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",348
+4.417292,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",349
+4.417303,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",350
+4.417314,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",351
+4.417325,7.488000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",352
+4.417336,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",353
+4.417347,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",354
+4.417358,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",355
+4.417369,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",356
+4.417380,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",357
+4.417391,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",358
+4.417402,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",359
+4.417413,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",360
+4.417424,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",361
+4.417435,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",362
+4.417446,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",363
+4.417457,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",364
+4.417468,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",365
+4.417479,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",366
+4.417490,7.808000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",367
+4.417501,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",368
+4.417512,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",369
+4.417523,7.552000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",370
+4.417534,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",371
+4.417545,7.519000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",372
+4.417556,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",373
+4.417567,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",374
+4.417578,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",375
+4.417589,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",376
+4.417600,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",377
+4.417611,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",378
+4.417622,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",379
+4.417633,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",380
+4.417644,7.520000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",381
+4.417655,7.519000,1,1,1,4,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",382
+6.430115,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",418
+6.430126,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",419
+6.430137,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",420
+6.430148,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",421
+6.430159,7.744000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",422
+6.430170,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",423
+6.430181,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",424
+6.430192,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",425
+6.430203,7.519000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",426
+6.430214,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",427
+6.430225,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",428
+6.430236,7.552000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",429
+6.430247,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",430
+6.430258,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",431
+6.430269,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",432
+6.430280,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",433
+6.430291,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",434
+6.430301,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",435
+6.430312,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",436
+6.430323,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",437
+6.430334,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",438
+6.430345,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",439
+6.430356,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",440
+6.430367,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",441
+6.430378,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",442
+6.430389,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",443
+6.430400,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",444
+6.430411,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",445
+6.430422,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",446
+6.430432,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",447
+6.430443,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",448
+6.430454,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",449
+6.430465,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",450
+6.430476,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",451
+6.430487,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",452
+6.430498,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",453
+6.430509,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",454
+6.430520,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",455
+6.430531,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",456
+6.430542,7.520000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",457
+6.430552,7.520000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",458
+6.430563,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",459
+6.430574,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",460
+6.430585,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",461
+6.430596,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",462
+6.430607,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",463
+6.430618,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",464
+6.430629,7.455000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",465
+6.430640,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",466
+6.430651,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",467
+6.430662,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",468
+6.430673,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",469
+6.430684,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",470
+6.430695,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",471
+6.430705,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",472
+6.430716,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",473
+6.430727,7.520000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",474
+6.430738,7.487000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",475
+6.430749,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",476
+6.430760,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",477
+6.430771,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",478
+6.430782,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",479
+6.430793,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",480
+6.430804,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",481
+6.430815,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",482
+6.430825,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",483
+6.430836,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",484
+6.430847,7.455000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",485
+6.430858,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",486
+6.430869,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",487
+6.430880,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",488
+6.430891,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",489
+6.430902,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",490
+6.430913,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",491
+6.430924,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",492
+6.430935,7.520000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",493
+6.430946,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",494
+6.430957,7.455000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",495
+6.430967,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",496
+6.430978,7.520000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",497
+6.430989,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",498
+6.431000,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",499
+6.431011,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",500
+6.431022,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",501
+6.431033,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",502
+6.431044,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",503
+6.431055,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",504
+6.431066,7.455000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",505
+6.431077,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",506
+6.431088,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",507
+6.431099,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",508
+6.431110,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",509
+6.431120,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",510
+6.431131,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",511
+6.431142,7.456000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",512
+6.431153,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",513
+6.431164,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",514
+6.431175,7.455000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",515
+6.431186,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",516
+6.431197,7.488000,1,1,1,2,1,1,46,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_decreasingRound(int*, int*, int*)",517
+8.443496,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",553
+8.443507,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",554
+8.443517,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",555
+8.443528,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",556
+8.443539,7.296000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",557
+8.443550,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",558
+8.443560,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",559
+8.443571,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",560
+8.443582,7.296000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",561
+8.443593,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",562
+8.443603,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",563
+8.443614,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",564
+8.443625,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",565
+8.443635,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",566
+8.443646,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",567
+8.443657,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",568
+8.443668,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",569
+8.443678,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",570
+8.443689,7.200000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",571
+8.443700,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",572
+8.443710,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",573
+8.443721,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",574
+8.443732,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",575
+8.443743,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",576
+8.443753,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",577
+8.443764,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",578
+8.443775,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",579
+8.443786,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",580
+8.443796,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",581
+8.443807,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",582
+8.443818,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",583
+8.443829,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",584
+8.443839,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",585
+8.443850,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",586
+8.443861,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",587
+8.443871,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",588
+8.443882,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",589
+8.443893,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",590
+8.443903,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",591
+8.443914,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",592
+8.443925,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",593
+8.443936,7.263000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",594
+8.443947,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",595
+8.443957,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",596
+8.443968,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",597
+8.443979,7.296000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",598
+8.443989,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",599
+8.444000,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",600
+8.444011,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",601
+8.444022,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",602
+8.444032,7.296000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",603
+8.444043,7.231000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",604
+8.444054,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",605
+8.444064,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",606
+8.444075,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",607
+8.444086,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",608
+8.444097,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",609
+8.444107,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",610
+8.444118,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",611
+8.444129,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",612
+8.444139,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",613
+8.444150,7.231000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",614
+8.444161,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",615
+8.444171,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",616
+8.444182,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",617
+8.444193,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",618
+8.444204,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",619
+8.444214,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",620
+8.444225,7.296000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",621
+8.444236,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",622
+8.444247,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",623
+8.444257,7.231000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",624
+8.444268,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",625
+8.444279,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",626
+8.444290,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",627
+8.444300,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",628
+8.444311,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",629
+8.444322,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",630
+8.444332,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",631
+8.444343,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",632
+8.444354,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",633
+8.444365,7.263000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",634
+8.444375,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",635
+8.444386,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",636
+8.444397,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",637
+8.444407,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",638
+8.444418,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",639
+8.444429,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",640
+8.444440,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",641
+8.444451,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",642
+8.444461,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",643
+8.444472,7.231000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",644
+8.444483,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",645
+8.444493,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",646
+8.444504,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",647
+8.444515,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",648
+8.444525,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",649
+8.444536,7.264000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",650
+8.444547,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",651
+8.444558,7.232000,1,1,1,1,1,1,40,0,0,"Tesla V100-PCIE-32GB (0)","1","7","parsha256_kernel_gpu_lastRound(int*, int*, int*, int*, int, int)",652
