@@ -203,7 +203,7 @@ std::string parsha256_on_gpu(const std::string in, const bool benchmark = false)
 //
 
     int threads = std::pow(2, t);
-    int threads_per_threadsblock = std::min(128, threads);
+    int threads_per_threadsblock = std::min(64, threads);
     int thread_blocks = (threads_per_threadsblock + threads - 1) / threads_per_threadsblock;
 
     // Copy data to gpu memory
